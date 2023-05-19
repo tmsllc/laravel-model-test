@@ -50,5 +50,6 @@
     }
   },
   "minimum-stability": "dev",
+  "vendor/package": "1.0.0",
   "prefer-stable": true
 }

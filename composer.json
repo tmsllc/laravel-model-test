@@ -1,0 +1,54 @@
+{
+  "name": "tmsllc/laravel-model-test",
+  "description": "A package to create CRUD feature tests to eloquent models",
+  "keywords": [
+    "laravel",
+    "test",
+    "feature",
+    "automate-test"
+  ],
+  "homepage": "https://github.com/tmsllc/laravel-model-test",
+  "license": "MIT",
+  "authors": [
+    {
+        "name": "Transport Systems",
+        "email": "alerts@transportsystemsgroup.com",
+        "homepage": "https://transport-system.com/",
+        "role": "System"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^8.71|^9.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.4",
+    "orchestra/testbench": "^6.23|^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "TMSLLC\\ModelTest\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "TMSLLC\\ModelTest\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "TMSLLC\\ModelTest\\ModelTestServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
